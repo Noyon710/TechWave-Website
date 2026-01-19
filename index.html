@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechWave Podcast</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechWave Podcast</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-black text-white">
+
+
+<header class="w-full fixed top-0 z-50 bg-gradient-to-r from-[#0F051D] via-[#1B0B3A] to-[#2A0F5E] backdrop-blur">
+   <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     
+        <div class="flex items-center text-2xl font-bold">Tech<span class="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Wave</span></div>
+
+        <ul class="hidden lg:flex gap-8 text-sm">
+        <li class="hover:text-purple-400">About</li>
+        <li class="hover:text-purple-400">Episodes</li>
+        <li class="hover:text-purple-400">Host</li>
+        </ul>
+
+    <!-- Button -->
+    <div class="hidden lg:block">
+      <button class="px-6 py-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500">Subscribe</button>
+    </div>
+
+    <!-- Mobile Icon -->
+    <div class="lg:hidden"><img src="assets/hamburger-menu.png" class="w-6"/></div>
+  </nav>
+</header>
+
+<!-- ================= BANNER ================= -->
+<section class="pt-32 pb-20 bg-[url('assets/hero-bg.png')] bg-cover bg-center">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <div class="relative mx-auto w-64 h-64 rounded-full  flex items-center justify-center">
+      
+      
+     <div class="relative mx-auto w-64 h-64 rounded-full  flex items-center justify-center">
+        <img src="assets/hero-circle.png"class="absolute inset-0 w-650px h-650px "alt="Mic Background"/>
+        <img src="assets/microphone.png" class="absolute inset-0 m-auto w-25 h-25 "alt="Microphone"/>
+        <span class="absolute top-4 right-4 bg-green-500 text-xs px-2 py-1 rounded">NEW</span>
+    </div>
+
+      
+    </div>
+    <h1 class="text-5xl font-bold mt-8">TechWave</h1>
+    <p class="mt-4 text-gray-300 max-w-xl mx-auto">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+    <div class="mt-6 flex justify-center gap-4">
+      <button class="px-6 py-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500">Listen Now</button>
+      <button class="px-6 py-2 rounded-full border text-green-500 ">Explore</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="py-20 bg-gradient-to-r from-[#0F051D] via-[#1B0B3A] to-[#2A0F5E] backdrop-blur ">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center">About the Podcast</h2>
+    <p class="text-center text-gray-400 mt-4  mx-auto">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+        <br>
+        We break down complex topics into digestible insights, explore productivity strategies that actually work,
+        <br>
+        and share stories of personal growth from industry 
+        <br>
+        <br>
+        Join thousands of young professionals and tech enthusiasts who start their day with TechWave</p>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+      <div class="text-center">
+        <h3 class="text-3xl text-green-500 font-bold">150k+</h3>
+        <p class="text-gray-400">Monthly Listeners</p>
+      </div>
+      <div class="text-center">
+        <h3 class="text-3xl text-green-500 font-bold">200+</h3>
+        <p class="text-gray-400">Episodes Published</p>
+      </div>
+      <div class="text-center">
+        <h3 class="text-3xl text-green-500 font-bold">4.9★</h3>
+        <p class="text-gray-400">Average Rating</p>
+      </div>
+      <div class="text-center">
+        <h3 class="text-3xl text-green-500 font-bold">50+</h3>
+        <p class="text-gray-400">Industry Experts</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 </body>
 </html>
